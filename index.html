@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ByteForge — студенческий клуб программирования МИТУ: веб-разработка, Python и AI, робототехника.">
+    <title>ByteForge — Студенческий клуб программирования</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Живой видео-фон -->
+    <div class="video-bg-container">
+        <video autoplay muted loop playsinline class="bg-video" aria-hidden="true">
+            <source src="images/animation1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <h1>ByteForge<span class="logo-accent">.code</span></h1>
+        </div>
+        <nav class="menu" aria-label="Главное меню">
+            <a href="#about">О клубе</a>
+            <a href="#directions">Направления</a>
+            <a href="#join">Как вступить</a>
+            <a href="#schedule">Расписание</a>
+            <a href="#form-section">Запись</a>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+
+        <!-- Блок «О клубе» -->
+        <section id="about" class="about-section">
+            <div class="about-text">
+                <span class="badge">МИТУ · IT CLUB</span>
+                <h2>Добро пожаловать в клуб программирования</h2>
+                <p><strong>ByteForge</strong> — это независимое сообщество студентов МИТУ и энтузиастов цифровых технологий, объединенных страстью к созданию современного ПО, веб-приложений и решению сложных алгоритмических задач.</p>
+                <p>Мы собираемся вместе, чтобы разбирать реальные кейсы, писать код на разных языках программирования, готовиться к хакатонам и развивать профессиональные навыки в кругу единомышленников. Кроме того, в конце этого месяца пройдёт хакатон, поэтому мы собираем команду из 4 человек.</p>
+                <p>Независимо от того, пишете ли вы свои первые строчки на Python или уже создаешь сложные смарт-контракты и веб-сервисы — здесь каждый найдет для себя интересную задачу, ментора и команду для совместного проекта. Даже если вы пока не умеете программировать, вы можете начать учиться вместе с нами.</p>
+            </div>
+            <div class="about-image">
+                <div class="img-wrapper">
+                    <img src="images/yo.jpg" alt="Студенты клуба программирования за работой над проектами">
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок «Направления» -->
+        <section id="directions" class="directions-section">
+            <h2>Наши основные направления</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/webdev.jpg" alt="Web Development" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Web Development</h3>
+                        <p>Изучаем современные стандарты HTML5, CSS3, JavaScript и фреймворки. Создаем адаптивные сайты, интерфейсы и полноценные веб-приложения с нуля.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/python.jpg" alt="Python & AI" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Python & AI</h3>
+                        <p>Пишем скрипты, автоматизируем рутину, погружаемся в алгоритмы обработки данных, искусственный интеллект и машинное обучение на базе Python.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="images/robotics.jpg" alt="Robotics & IoT" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3>Robotics & IoT</h3>
+                        <p>Собираем умные устройства на базе Arduino и микроконтроллеров, подключаем датчики, моторы и пишем прошивки для реальных аппаратных систем.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок «Как вступить» -->
+        <section id="join" class="join-section">
+            <h2>Как стать частью клуба</h2>
+            <p>Процесс отбора прост и направлен на тех, кто действительно хочет учиться и развиваться в сфере IT. Следуйте этим шагам:</p>
+            <ul class="join-steps">
+                <li><span>1</span> Заполните анкету участника в форме записи ниже на странице.</li>
+                <li><span>2</span> Вступите в наш закрытый Telegram-канал клуба для получения дальнейших инструкций.</li>
+                <li><span>3</span> Посетите вводное офлайн-собрание в университете в ближайшую среду (см. расписание).</li>
+                <li><span>4</span> Выберите проектное направление и присоединяйтесь к командной разработке!</li>
+            </ul>
+        </section>
+
+        <!-- Блок «Расписание» -->
+        <section id="schedule" class="schedule-section">
+            <h2>Расписание встреч и занятий</h2>
+            <div class="table-responsive">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">День недели</th>
+                            <th scope="col">Время</th>
+                            <th scope="col">Тема занятия / Активность</th>
+                            <th scope="col">Аудитория</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Понедельник</strong></td>
+                            <td><span class="time-tag">16:30 – 18:00</span></td>
+                            <td>Введение в алгоритмы и структуры данных на Python</td>
+                            <td>Ауд. 303</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Среда</strong></td>
+                            <td><span class="time-tag">15:00 – 17:00</span></td>
+                            <td>Практикум по верстке: Flexbox, CSS Grid и адаптивность</td>
+                            <td>Ауд. 303</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Пятница</strong></td>
+                            <td><span class="time-tag">16:00 – 18:30</span></td>
+                            <td>Подготовка к хакатону / Командный брейншторм</td>
+                            <td>Электронный зал МИТУ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Суббота</strong></td>
+                            <td><span class="time-tag">12:00 – 14:00</span></td>
+                            <td>Мастер-класс по робототехнике и Arduino</td>
+                            <td>Ауд. 301</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Блок «Запись в клуб» (Форма) -->
+        <section id="form-section" class="form-section">
+            <h2>Записаться в клуб программирования</h2>
+            <form id="applicationForm" class="club-form">
+                <div class="form-group">
+                    <label for="fullname">Ваше ФИО:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Ерлан Дидар" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефона (WhatsApp):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 707 123 45 67" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="student@metu.edu.kz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="direction">Желаемое направление:</label>
+                    <select id="direction" name="direction">
+                        <option value="web">Web Development</option>
+                        <option value="python">Python & AI</option>
+                        <option value="robotics">Robotics & IoT</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="about-me">Пару слов о вашем опыте:</label>
+                    <textarea id="about-me" name="about_me" rows="4" placeholder="Какой язык уже знаете? Какой опыт есть?"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Подать заявку</button>
+            </form>
+
+            <!-- Блок сообщения об успешной отправке -->
+            <div id="form-success-message" style="display: none; margin-top: 15px; padding: 15px; background: rgba(56, 189, 248, 0.15); border: 1px solid #38bdf8; border-radius: 8px; color: #38bdf8; text-align: center; font-weight: 600;">
+                Спасибо за заявку! Мы свяжемся с вами в ближайшее время.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Студенческий клуб программирования «ByteForge». Все права защищены.</p>
+            <p>Контакты: <a href="tel:+77474397430">+7 747 439 74 30</a> | Email: <a href="mailto:support@byteforge.kz">support@byteforge.kz</a></p>
+        </div>
+    </footer>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
+</body>
+</html>
